@@ -1,2 +1,13 @@
 <h1>{{title}}</h1>
 <p>Welcome Ironhacker!</p>
+
+<ul>
+{{#each posts}}
+  <li>
+    <a href="/posts/{{_id}}"><h3>{{picName}}</h3></a>
+    <img src="{{picPath}}" alt="{{picName}}" style="max-width:100%">
+    <p>{{content}}</p>
+    <small>by {{creatorId.username}}</small>
+  </li>
+{{/each}}
+</ul>
