@@ -1,0 +1,14 @@
+<h2>Hi, {{ user.username}}! Add a post</h1>
+
+<form method="POST" enctype="multipart/form-data">
+  <label for="input-picture">Picture</label>
+  <input type="file" id="input-picture" name="picPath" accept="image/png, image/jpeg" />
+
+  <label for="input-picture-name">Picture Title</label>
+  <input type="text" id="input-picture-name" name="picName" placeholder="Picture Name" />
+
+  <label for="input-content">Content</label>
+  <textarea type="text" id="input-content" name="content" placeholder="Content" required></textarea>
+
+  <button>Post</button>
+</form>
